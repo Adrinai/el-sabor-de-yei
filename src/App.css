@@ -1,23 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&display=swap');
 .App {
   text-align: center;
-  /* Artboard 3 */
-  position: relative;
-width: 1600px;
-height: 1200px;
-
-background: #214856;
-
-
-/* Artboard 2 */
-
-
-position: relative;
-width: 1600px;
-height: 1200px;
-
-background: #214856;
-
-
+  font-family: 'Open Sans', sans-serif;
+  
 /* Artboard1 */
 
 
@@ -44,7 +29,7 @@ background: #93459F;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: right;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;

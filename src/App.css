@@ -1,5 +1,31 @@
 .App {
   text-align: center;
+  /* Artboard 3 */
+  position: relative;
+width: 1600px;
+height: 1200px;
+
+background: #214856;
+
+
+/* Artboard 2 */
+
+
+position: relative;
+width: 1600px;
+height: 1200px;
+
+background: #214856;
+
+
+/* Artboard1 */
+
+
+position: relative;
+width: 1600px;
+height: 1200px;
+
+background: #93459F;
 }
 
 .App-logo {

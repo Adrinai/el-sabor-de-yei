@@ -45,5 +45,6 @@ background: #93459F;
   }
   to {
     transform: rotate(360deg);
+    
   }
 }

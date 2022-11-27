@@ -20,6 +20,8 @@ import tartarosa from './img/tartarosa.jpeg';
 import tartarosa2 from './img/tartarosa2.jpeg';
 import tequeños from './img/tequeños.jpeg';
 import trufas from './img/trufas.jpeg';
+import portada2 from './img/portada2.jpg';
+import logopeque from './img/logopeque.png';
 
 export default{
     "img1": bolaschoco,
@@ -41,4 +43,6 @@ export default{
     "img17": tartarosa2,
     "img18": tequeños,
     "img19": trufas,
+    "img20": portada2,
+    "img21": logopeque,
 }

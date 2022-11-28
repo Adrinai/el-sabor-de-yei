@@ -1,7 +1,7 @@
 
 import React from 'react'
-import { Container, LogoContainer, Wrapper, Menu, MenuItem, MenuItemLink, MobileIcon } from './NavbarElements'
-import { FaInstagramSquare, FaRegEnvelope, FaWhatsapp, FaFacebook, FaBars } from "react-icons/fa";
+import { Container, Wrapper, Menu, MenuItem, MenuItemLink,} from './NavbarElements'
+
 import { IconContext } from 'react-icons';
 
 const Navbar = () => {
@@ -9,19 +9,7 @@ const Navbar = () => {
     <Container>
        <Wrapper>
        <IconContext.Provider value={{style: {fontSize: "1rem"}}}>
-       
-            <LogoContainer>
-                <FaFacebook/>
-            </LogoContainer>
-            <LogoContainer>
-                <FaInstagramSquare/>
-            </LogoContainer>
-            <LogoContainer>
-                <FaWhatsapp/> 
-            </LogoContainer>
-            <LogoContainer>
-                <FaRegEnvelope/>
-            </LogoContainer>
+
                 <Menu>
                     <MenuItem>
                         <MenuItemLink>
@@ -43,9 +31,6 @@ const Navbar = () => {
                             CONTACTO
                         </MenuItemLink>
                     
-                    <MobileIcon>
-                        <FaBars/>
-                    </MobileIcon>
                         </MenuItem>
                             </Menu>
                         </IconContext.Provider>

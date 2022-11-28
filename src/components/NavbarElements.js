@@ -14,7 +14,7 @@ display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
 margin: auto;
-
+aligne-items: right;
 `
 export const LogoContainer = styled.div`
 margin-left: 0.5rem;
@@ -42,11 +42,12 @@ list-style: none;
     left: 0;
     width: 100%;
     height: 90vh;
+    
 }
 `
 export const MenuItem = styled.li`
 height: 100%;
-
+aligne-items: right;
 `
 export const MenuItemLink = styled.a`
 display: flex;
@@ -63,16 +64,16 @@ transition: 0.5s all ease;
     background-color: #AA7BC3;
     transition: 0.5s all ease;
 `
-export const MobileIcon = styled.div`
-display: none;
-@media screem and (max-width: 960px)
-display: flex;
-align-items: center;
-cursor: pointer;
-svg{
-    margin-right: 0.5rem;
-  }
-`
+// export const MobileIcon = styled.div`
+// display: none;
+// @media screem and (max-width: 960px)
+// display: flex;
+// align-items: center;
+// cursor: pointer;
+// svg{
+//     margin-right: 0.5rem;
+//   }
+
 export const FaFacebook = styled.div`
-    padding: 18px 18px;
+    padding: 5px 5px;
 `

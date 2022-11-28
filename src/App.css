@@ -43,8 +43,14 @@ background: #9546a1;
   background-image: url('../src/assets/img/portada2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
+  position: relative;
+  padding-bottom: 3em ;
 }
-.logo{
-  width: 10%;
-  direction: initial;
+
+footer{
+  position: absolute;
+  bottom: 0;
+  align-items: center;
+  width: 100%;
 }

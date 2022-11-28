@@ -12,6 +12,8 @@ import './App.css';
 import Navbar from './components/Navbar';
 import imagenes from './assets/imagenes';
 import Carrusel from './components/Carrusel';
+import PieIconos from './components/PieIconos';
+import Logo from './components/Logo';
 
 
 function App() {
@@ -19,15 +21,16 @@ function App() {
     <>
     <body className='fondo'>
     
-      <div>
-    <Navbar/>
-    <img src={imagenes.img21} className='logo'/>
-     {/* <Carrusel/> */}
+      
+        <Navbar/><Logo/>
+      
      
-    
-     
-    </div>
+   
     </body>
+    <footer>
+    <PieIconos className='footer'></PieIconos>
+     </footer>
+
     </>
   );
 }

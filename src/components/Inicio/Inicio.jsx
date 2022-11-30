@@ -10,7 +10,7 @@ export default function Inicio() {
       
       <Navbar />
       <Logo />
-    
+  
       <Main/>
       <Footer className="footer"></Footer>
     </div>

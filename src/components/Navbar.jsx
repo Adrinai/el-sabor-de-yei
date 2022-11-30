@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { Container, Wrapper, Menu, MenuItem, MenuItemLink,} from './NavbarElements'
+import { Container, Wrapper, Menu, MenuItem, MenuItemLink,} from './NavbarStyle'
 
 import { IconContext } from 'react-icons';
 

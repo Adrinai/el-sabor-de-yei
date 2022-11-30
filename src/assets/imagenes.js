@@ -1,6 +1,6 @@
 
 
-import { LogoContainer } from '../components/NavbarElements';
+import { LogoContainer } from '../components/NavbarStyle';
 import bolaschoco from './img/bolaschoco.jpeg';
 import cupkeistrosas from './img/cupkeistrosas.jpeg';
 import logo from './img/logo.png';

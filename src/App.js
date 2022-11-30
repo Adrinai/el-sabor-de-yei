@@ -1,37 +1,18 @@
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbSeparator,
-} from '@chakra-ui/react';
-import { Button, ButtonGroup } from '@chakra-ui/react';
-import { EmailIcon, PhoneIcon, AddIcon, WarningIcon } from '@chakra-ui/icons'
-import { Box, Flex } from "@chakra-ui/react"
-import logo from './logo.svg';
-import './App.css';
-import Navbar from './components/Navbar';
-import imagenes from './assets/imagenes';
-import Carrusel from './components/Carrusel';
-import PieIconos from './components/PieIconos';
-import Logo from './components/Logo';
-
+import "./App.css";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import Inicio from "./components/Inicio/Inicio";
+import QuienesSomos from "./components/QuienesSomos";
+import Productos from "./components/Productos";
 
 function App() {
   return (
-    <>
-    <body className='fondo'>
-    
-      
-        <Navbar/><Logo/>
-      
-     
-   
-    </body>
-    <footer>
-    <PieIconos className='footer'></PieIconos>
-     </footer>
-
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Inicio />} />
+        <Route path="/quienesSomos" element={<QuienesSomos />} />
+        <Route path="/productos" element={<Productos />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

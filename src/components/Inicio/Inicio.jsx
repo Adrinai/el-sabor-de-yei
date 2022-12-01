@@ -1,18 +1,20 @@
 import React from "react";
 import Navbar from "../Navbar";
 import Logo from "../Logo";
-import Main from "../Main";
 import Footer from "../Footer";
+import '../Styles/MainStyle.css';
 
 export default function Inicio() {
   return (
-    <div>
+    <div className="fondo">
       
       <Navbar />
+      
       <Logo />
-  
-      <Main/>
-      <Footer className="footer"></Footer>
+ 
+ <div className="footer">
+      <Footer/>
+      </div>
     </div>
   );
 }

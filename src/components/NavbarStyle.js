@@ -19,7 +19,7 @@ aligne-items: right;
 export const LogoContainer = styled.div`
 margin-left: 0.5rem;
   display: flex;
-  align-items: center;
+  align-items: right;
   font-size: 0.2rem;
   font-family: sans-serif;
   &:hover {
@@ -52,6 +52,7 @@ aligne-items: right;
 export const MenuItemLink = styled.a`
 display: flex;
 justiy-content: center;
+aligne-items: right;
 height: 100%;
 padding: 0.5rem 2.5rem;
 font-family: sans-serif;

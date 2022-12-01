@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&display=swap');
-.App {
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&display=swap');
+
+/* .App {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   
 /* Artboard1 */
 
-
+/* 
 position: relative;
 width: 1600px;
 height: 1200px;
@@ -33,24 +34,25 @@ background: #9546a1;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-/* .fondo img{
+} */ 
+/* 
+.fondo img{
   width: 100%;
   height: 100%;
-}
-.fondo{
+} */
+/* .fondo{
   background-image: url('../src/assets/img/portada2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
   position: relative;
   padding-bottom: 3em ;
-}
+} */
 
-footer{
+/* .Footer{
   position: absolute;
   bottom: 0;
   align-items: center;
-  width: 100%;
-} */
+  width: 50%;
+  margin-top: 0;
+}  */ 

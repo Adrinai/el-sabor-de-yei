@@ -94,13 +94,13 @@ export default function SmallCentered() {
           align={{ base: 'center', md: 'center' }}>
           <Text>© 2022 Chakra Templates. All rights reserved</Text>
           <Stack direction={'row'} spacing={6}>
-            <SocialButton label={'Facebook'} href={'#'}>
+            <SocialButton label={'Facebook'} href={'https://www.facebook.com/elsabordeyei'}>
               <FaFacebook />
             </SocialButton>
-            <SocialButton label={'Envelope'} href={'#'}>
+            <SocialButton label={'Envelope'} href={'mailto:grupoelsabordeyei0711ca@gmail.com?Subject=Más%20información%20sobre%20sus%20productos'}>
               <FaRegEnvelope />
             </SocialButton>
-            <SocialButton label={'Instagram'} href={'#'}>
+            <SocialButton label={'Instagram'} href={'https://bit.ly/3fVS0kv'}>
               <FaInstagram />
             </SocialButton>
           </Stack>

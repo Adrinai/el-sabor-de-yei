@@ -2,7 +2,7 @@ import styled from "styled-components"
 export const Container = styled.div`
 width: 100%;
 height: 70px;
-background-color: rgba(205, 76, 196, 0.4);
+background-color: rgba(5, 150, 155, 0.4);
 
 `
 
@@ -62,7 +62,7 @@ cursor: ponter;
 transition: 0.5s all ease;
 &:hover {
     color: #fff;
-    background-color: #AA7BC3;
+    background-color: rgb(153, 214, 216);
     transition: 0.5s all ease;
 `
 // export const MobileIcon = styled.div`

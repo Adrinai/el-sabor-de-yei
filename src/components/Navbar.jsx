@@ -30,7 +30,9 @@ const Navbar = () => {
               <MenuItemLink>PRODUCTOS</MenuItemLink>
             </MenuItem>
             <MenuItem>
-              <MenuItemLink>CONTACTO</MenuItemLink>
+            <MenuItemLink>
+              <Link to="/contacto">Contacto</Link>
+            </MenuItemLink>
             </MenuItem>
           </Menu>
         </IconContext.Provider>

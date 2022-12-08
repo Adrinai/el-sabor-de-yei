@@ -22,6 +22,7 @@ import tequeños from './img/tequeños.jpeg';
 import trufas from './img/trufas.jpeg';
 import portada2 from './img/portada2.jpg';
 import logopeque from './img/logopeque.png';
+import perfil from './img/perfil.jpeg';
 
 export default{
     "img1": bolaschoco,
@@ -45,4 +46,5 @@ export default{
     "img19": trufas,
     "img20": portada2,
     "img21": logopeque,
+    "img22": perfil,
 }

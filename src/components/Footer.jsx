@@ -16,8 +16,8 @@ import { FaInstagram, FaFacebook, FaRegEnvelope } from 'react-icons/fa';
 const Logo = (props) => {
   return (
     <svg
-      height={32}
-      viewBox="0 0 120 28"
+      height={15}
+      viewBox="0 0 120 20"
       xmlns="http://www.w3.org/2000/svg"
       {...props}>
       <path
@@ -42,7 +42,7 @@ const SocialButton = ({
       bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
       rounded={'full'}
       w={8}
-      h={8}
+      h={4}
       cursor={'pointer'}
       as={'a'}
       href={href}
@@ -85,15 +85,16 @@ export default function SmallCentered() {
         borderStyle={'solid'}
         borderColor={useColorModeValue('rgb(62, 204, 202)')}>
         <Container
+        boxSizing="content-box"
           as={Stack}
           maxW={'6xl'}
           py={4}
           direction={{ base: 'column', md: 'row' }}
-          spacing={4}
+          spacing={2}
           justify={{ base: 'center', md: 'space-between' }}
           align={{ base: 'center', md: 'center' }}>
           <Text>© 2022 Chakra Templates. All rights reserved</Text>
-          <Stack direction={'row'} spacing={6}>
+          <Stack direction={'row'} spacing={4}>
             <SocialButton label={'Facebook'} href={'https://www.facebook.com/elsabordeyei'}>
               <FaFacebook />
             </SocialButton>

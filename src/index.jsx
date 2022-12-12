@@ -1,19 +1,15 @@
-import React from 'react';
-import { ChakraProvider } from '@chakra-ui/react'
-import ReactDOM from 'react-dom/client';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import {theme} from './resorces/theme';
+import React from "react";
+import { ChakraProvider } from "@chakra-ui/react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <ChakraProvider theme={theme}>
-  <React.StrictMode>
-    
-    <App />
-    
-  </React.StrictMode>
+  <ChakraProvider>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
   </ChakraProvider>
 );
 

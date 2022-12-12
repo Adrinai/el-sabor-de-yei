@@ -1,4 +1,3 @@
-import "./App.css";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Inicio from "./components/Inicio/Inicio";
 import QuienesSomos from "./components/QuienesSomos";

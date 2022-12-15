@@ -3,7 +3,8 @@ import Navbar from "./Navbar";
 import Logo from "./Logo";
 import Footer from "./Footer";
 import "./Styles/MainStyle.css";
-import perfil from '../assets/img/perfil.jpeg';
+import perfil from '../assets/img/perfil 4.jpeg';
+import "./QuieneStyle.css";
 
 export default function QuienesSomos() {
   return (

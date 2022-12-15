@@ -16,7 +16,7 @@ import { FaInstagram, FaFacebook, FaRegEnvelope } from 'react-icons/fa';
 const Logo = (props) => {
   return (
     <svg
-      height={15}
+      height={85}
       viewBox="0 0 120 20"
       xmlns="http://www.w3.org/2000/svg"
       {...props}>
@@ -42,7 +42,7 @@ const SocialButton = ({
       bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
       rounded={'full'}
       w={8}
-      h={4}
+      h={8}
       cursor={'pointer'}
       as={'a'}
       href={href}
@@ -62,13 +62,13 @@ const SocialButton = ({
 export default function SmallCentered() {
   return (
     <Box
-      bg={useColorModeValue('rgb(62, 204, 202)')}
+       bg={useColorModeValue('rgb(62, 204, 202)')}
       color={useColorModeValue('gray.50', 'gray.900')}>
       <Container
         as={Stack}
-        maxW={'6xl'}
-        py={4}
-        spacing={4}
+        maxW={'8xl'}
+        py={1}
+        spacing={8}
         justify={'center'}
         align={'center'}>
         
@@ -88,13 +88,13 @@ export default function SmallCentered() {
         boxSizing="content-box"
           as={Stack}
           maxW={'6xl'}
-          py={4}
+          py={1}
           direction={{ base: 'column', md: 'row' }}
-          spacing={2}
+          spacing={1}
           justify={{ base: 'center', md: 'space-between' }}
           align={{ base: 'center', md: 'center' }}>
           <Text>© 2022 Chakra Templates. All rights reserved</Text>
-          <Stack direction={'row'} spacing={4}>
+          <Stack direction={'row'} spacing={1}>
             <SocialButton label={'Facebook'} href={'https://www.facebook.com/elsabordeyei'}>
               <FaFacebook />
             </SocialButton>

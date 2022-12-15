@@ -1,0 +1,48 @@
+
+.historia{
+    border-radius: 5px;
+    justify-content: center;
+    z-index: 1;
+    width: 540px;
+    height: 370px;
+    padding: 20px 20px;
+    font-size: 15px;
+    line-height: 1.5;
+    background-color: aliceblue;
+    justify-items: center;
+
+    
+    }
+    
+    
+    .historia p{
+      justify-content: right;
+      float: right;
+      width: 540px;
+      height: 370px;
+      padding: 20px 20px;
+      color: black;
+     font-size: 15px;
+     line-height: 1.5;
+     background-color: aliceblue;
+     box-shadow: 1px 5px 25px rgba(0,0,0,0.45);
+     border-radius: 5px;
+     align-content: right;
+     
+    }
+      
+      
+    
+    .capa{
+      border-radius: 5px;
+      width: 100vw;
+      
+      height: 75vh;
+      display: flex;
+      justify-content: center;
+    } 
+    .footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    }

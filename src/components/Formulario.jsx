@@ -39,16 +39,15 @@ const Formulario = () => {
 <FormLabel className='texto' >Telefono</FormLabel>
 <Input type='telefono' className='texto'/>
 </FormControl>
-</FormControl>
+
     
-   
+<FormControl> 
 <FormLabel className='texto'>Mensaje</FormLabel>
 <Textarea type='mensaje' className='texto'/>
- 
+</FormControl>
 
-
-<Button colorScheme='blue' id='boton'>enviar</Button>
-
+<Button colorScheme='blue' className='boton'>Enviar</Button>
+</FormControl>
 </div>
  
 );

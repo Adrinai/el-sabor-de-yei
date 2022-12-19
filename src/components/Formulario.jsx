@@ -1,6 +1,7 @@
 import React from 'react'
-import "./Styles/MainStyle.css";
-import "./Formulario.css";
+import "../components/Styles/MainStyle.css";
+import "../components/Formulario.css";
+import { Flex, Spacer } from '@chakra-ui/react'
 import { Button, ButtonGroup, Textarea } from '@chakra-ui/react'
 import {
   FormControl,
@@ -20,7 +21,7 @@ const Formulario = () => {
     <FormControl>
     <FormControl isRequired>
     <FormLabel className='texto'>Nombre</FormLabel>
-    <Input placeholder='nombre completo' />   
+    <Input placeholder='nombre completo'className='name' />   
 </FormControl>
 <FormControl>
 <FormLabel className='texto'>Asunto</FormLabel>
@@ -49,7 +50,7 @@ const Formulario = () => {
 <Button colorScheme='blue' className='boton'>Enviar</Button>
 </FormControl>
 </div>
- 
+
 );
 };
 export default Formulario;

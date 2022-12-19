@@ -7,14 +7,17 @@
   
 }
 .portada {
+  /* display: grid;
+  gap:1;
+  height:200px;
+  grid-template-columns: 150px, 1fr;  */
+grid-template-rows: 50px 1fr 30px; 
   height: 100vh;
   width: 100vw; 
   background-image: url("../../assets/img/portada2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  text-align: center;
-  position: relative;
   
 }
 
@@ -22,4 +25,5 @@
   position: absolute;
   bottom: 0;
   width: 100%;
+  padding: 0px 0px 0px;
 }

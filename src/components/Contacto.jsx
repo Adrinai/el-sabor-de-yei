@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import Logo from "./Logo";
 import Footer from "./Footer";
 import Formulario from "./Formulario";
+import "../components/Formulario.css"
 
 export default function Contacto() {
     

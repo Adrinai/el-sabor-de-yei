@@ -5,14 +5,13 @@ import Footer from "./Footer";
 import "./Styles/MainStyle.css";
 import perfil from '../assets/img/perfil 4.jpeg';
 import "./QuieneStyle.css";
-import { Grid, GridItem } from '@chakra-ui/react'
-import { Flex, Spacer } from '@chakra-ui/react'
+import { Grid, GridItem } from '@chakra-ui/react';
+import { Flex, Spacer } from '@chakra-ui/react';
 
 export default function QuienesSomos() {
   return (
     
    
-
     <div className="portada">
       <div>
         <Navbar />
@@ -23,7 +22,7 @@ export default function QuienesSomos() {
       <Grid templateColumns='repeat(5, 1fr)' gap={4}>
   <GridItem colSpan={2} h='10'  />
   <GridItem colStart={4} colEnd={6} h='10'  />
-</Grid> 
+</Grid>  
         <img className='foto'
         src={perfil}/>
         <div className='historia'>
@@ -45,6 +44,6 @@ export default function QuienesSomos() {
         </div>
       </div>
     </div>
-      
+    
   );
 }

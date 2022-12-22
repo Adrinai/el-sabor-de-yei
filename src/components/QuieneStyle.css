@@ -1,4 +1,11 @@
-
+.portada{
+  display:flex ;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.portada > * {
+padding: 20px;
+}
 .historia{
     border-radius: 5px;
     justify-content: center;
@@ -10,8 +17,7 @@
     line-height: 1.5;
     background-color: aliceblue;
     justify-items: center;
-
-    
+    margin: top -100px; ;
     }
     
     
@@ -28,21 +34,21 @@
      box-shadow: 1px 5px 25px rgba(0,0,0,0.45);
      border-radius: 5px;
      align-content: right;
-     
+     margin-top: -40px;
     }
     
     .capa{
-      display: grid;
-  gap:1;
+      
+ flex-grow: 1;
   height:200px;
-  grid-template-columns: 150px, 1fr; 
-grid-template-rows: 50px 1fr 30px; 
+  /* grid-template-columns: 150px, 1fr; 
+grid-template-rows: 50px 1fr 30px;  */
       border-radius: 5px;
       width: 100vw;
-      
       height: 75vh;
-      display: flex;
+      display: flex; 
       justify-content: center;
+      margin-top: -40px;
     } 
     .footer{
     position: absolute;

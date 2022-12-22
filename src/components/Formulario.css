@@ -2,18 +2,19 @@
 
 *{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-size: 12px;
 }
 
 .formulario{
-    display: grid;
-  gap:1;
-  height:200px;
-  grid-template-columns: 150px, 1fr; 
-grid-template-rows: 50px 1fr 30px; 
+    display: flex;
+    gap:1;
+    height:200px;
+    
     width: 450px;
-    max-width: 75em;
-    height: 70vh;
+    /* max-width: 75em; */
+    min-height: 70vh;
     margin: auto;
     background: rgba(0, 0, 0, 0.3);
     padding: 10px 20px;
@@ -31,7 +32,7 @@ grid-template-rows: 50px 1fr 30px;
     width: 100%;
 }
     
- .name{
+ #name{
     color: white;
    }
 
@@ -42,4 +43,13 @@ grid-template-rows: 50px 1fr 30px;
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+.boton{
+    width: 100%;
+    background-color: rgb(5, 150, 155);
+    margin-top: 5px;
+}
+.boton:hover{
+    background-color: aquamarine;
+    
 }

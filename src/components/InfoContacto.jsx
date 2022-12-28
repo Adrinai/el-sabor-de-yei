@@ -1,21 +1,37 @@
 import React from 'react'
 import "../components/InfoContactoStyle.css";
-import logo from './Logo';
-import { Flex, Heading, Spacer } from '@chakra-ui/react'
+import Logo from './Logo';
+import { Flex, Heading, Spacer, SocialButton } from '@chakra-ui/react'
+import {
+  Box,
+  chakra,
+  Container,
+  Link,
+  Stack,
+  Text,
+  useColorModeValue,
+  VisuallyHidden,
+  
+
+} from '@chakra-ui/react';
+import { FaInstagram, FaFacebook, FaRegEnvelope } from 'react-icons/fa';
 
 const InfoContacto = () => {
   return (
+    
+    <div className='info'>
     <div className="logo">
       <div>
         <Logo />
       </div>
-      <div className='titulo'>
-      
+      <div className='text'>
+        
+      <p>
+      Nos interesa tu opinión, si tienes dudas o sugerencias ¡escríbenos!
+      </p>
       </div>
-      <div className="footer">
-        <Footer />
       </div>
-    </div>
+      </div>
   )
 }
 

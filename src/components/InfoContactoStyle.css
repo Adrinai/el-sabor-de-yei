@@ -1,7 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .info{
+    margin-bottom: 0;
     border: 1px;
    display: inline-block;
    width: auto;
    margin: auto;
    text-align: right;
+   
+}
+.titulo{
+    width: 70%;
+    text-align: justify;
+    margin-left: 20px;
+}
+.text{
+    width: auto;
+   margin: auto;
+   padding: 20px 20px 20px;
+   
+}
+.enlaces{
+    width: 70%;
+    position: relative;
+    justify-content: left;
+    justify-content: space-ar;
+    text-align: justify;
+}
+.ico{
+    align-items: center;
 }

@@ -2,8 +2,12 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-}
 
+}
+.contacto{
+    color: black;
+    text-align: center;
+}
 .info{
     margin-bottom: 0;
     border: 1px;
@@ -11,26 +15,39 @@
    width: auto;
    margin: auto;
    text-align: right;
-   
+   width: 450px;
+    /* max-width: 75em; */
+    min-height: 40vh;
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-top: -40px;
+    /* background: rgba(0, 0, 0, 0.4); */
+    background-color: aliceblue;
+    box-shadow: 1px 5px 25px rgba(0,0,0,0.45);
 }
 .titulo{
+    color: black;
     width: 70%;
     text-align: justify;
     margin-left: 20px;
 }
 .text{
+    color: black;
     width: auto;
    margin: auto;
    padding: 20px 20px 20px;
    
 }
 .enlaces{
+    
     width: 70%;
     position: relative;
     justify-content: left;
-    justify-content: space-ar;
     text-align: justify;
 }
-.ico{
+
+.logo{
     align-items: center;
 }

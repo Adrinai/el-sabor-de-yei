@@ -8,8 +8,9 @@ const InfoContacto = () => {
   return (
       
     <div className='info'>
+      <h1 className='contacto'>INFORMACIÓN CONTACTO</h1>
     <div>
-      <div className='ico'>
+      <div className='logo'>
         <Logo />
       </div>
       

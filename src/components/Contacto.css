@@ -1,0 +1,13 @@
+.contenedor{
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -20%;
+  }
+  .footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    }

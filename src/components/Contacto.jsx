@@ -6,7 +6,7 @@ import Formulario from "./Formulario";
 import "../components/Formulario.css"
 import InfoContacto from './InfoContacto';
 import "../components/InfoContactoStyle.css"
-import { Wrap, WrapItem } from '@chakra-ui/react'
+import "../components/Contacto.css"
 
 export default function Contacto() {
     
@@ -17,7 +17,7 @@ export default function Contacto() {
       <div>
       <div>
         <Navbar />
-        <Logo />
+        {/* <Logo /> */}
       </div>
       <div className='contenedor'>
       <div className='formulario'>
@@ -25,11 +25,11 @@ export default function Contacto() {
       </div>
       
       <div className='info'>
-        <div className='formulario'>
+        
        <InfoContacto/>
       </div>
       </div>
-      </div>
+      
     </div>
       <div className="footer">
         <Footer />

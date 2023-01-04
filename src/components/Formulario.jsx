@@ -12,6 +12,7 @@ import {
   FormHelperText,
 } from '@chakra-ui/react'
 import Select from 'react-select';
+import Animacion from './Animacion';
 
 const Formulario = () => {
   const { register, handleSubmit, watch, formState: { errors } } = useForm()
@@ -22,7 +23,7 @@ const Formulario = () => {
     <Fragment>
       <form onSubmit={handleSubmit} className='form-react'>
     <div className='formulario'>
-        <h1 className='pedido'>¡HAZ TU PEDIDO!</h1>
+      <Animacion/>
     <FormControl className='row'>
     <FormControl isRequired>
     <FormLabel className='texto'>Nombre</FormLabel>

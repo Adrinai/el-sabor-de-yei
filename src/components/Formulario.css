@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
 
 *{
     margin: 0;
@@ -29,8 +29,26 @@
 
 .texto {
     color: white;
-   
+     
+}
+.titulo{
+    font-family: 'Carter One', cursive;
+    font-size: 50px;
+    align-items: center;
+    background: black;
     
+}
+h1{
+    font-size: 3rem;
+    position: absolute;
+    margin-left: 10;
+    
+}
+.border{
+    color: black;
+    text-shadow: -1px -1px 0 white,
+                 1px -1px 0 white,
+
 }
 .Input{
     width: 100%;

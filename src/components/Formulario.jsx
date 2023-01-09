@@ -23,7 +23,11 @@ const Formulario = () => {
     <Fragment>
       <form onSubmit={handleSubmit} className='form-react'>
     <div className='formulario'>
-      <Animacion/>
+      {/* <Animacion/> */}
+      <div className='titulo'>
+        <h1 className='border'>PEDIDO</h1>
+        <h1 className='wave'>PEDIDO</h1>
+      </div>
     <FormControl className='row'>
     <FormControl isRequired>
     <FormLabel className='texto'>Nombre</FormLabel>

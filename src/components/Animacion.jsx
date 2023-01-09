@@ -1,13 +1,17 @@
 import React from 'react'
+
 import "../components/Animacion.css"
 
 const Animacion = () => {
   return (
     
     <div className='titulo'>
-        <body>
-        <h1>TU PEDIDO</h1>
-        </body>
+        <div>
+        <h1 className='border'>PEDIDO</h1>
+        </div>
+        <div>
+        <h1 className='wave'>PEDIDO</h1>
+        </div>
     </div>
   )
 }

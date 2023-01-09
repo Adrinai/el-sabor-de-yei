@@ -14,7 +14,7 @@ const InfoContacto = () => {
         <Logo />
       </div>
       
-        <div className='titulo'>
+        <div className='opinion'>
       <p>
       Nos interesa tu opinión, si tienes dudas o sugerencias ¡escríbenos!
       </p>

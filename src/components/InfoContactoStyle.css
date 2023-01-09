@@ -5,7 +5,7 @@
 
 }
 .contacto{
-    color: black;
+    /* color: black; */
     text-align: center;
 }
 .info{
@@ -27,14 +27,16 @@
     background-color: aliceblue;
     box-shadow: 1px 5px 25px rgba(0,0,0,0.45);
 }
-.titulo{
-    color: black;
+
+
+.opinion p{
+    color:black ;
     width: 70%;
     text-align: justify;
     margin-left: 20px;
 }
 .text{
-    color: black;
+    color: black; 
     width: auto;
    margin: auto;
    padding: 20px 20px 20px;

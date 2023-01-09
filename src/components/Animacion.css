@@ -4,28 +4,19 @@
     margin: 0;
     padding: 0;
     /* box-sizing: border-box; */
+   
+}
+.titulo{
+    display: flex;
     
 }
-
-
-.body{
-    display: flex;
-    align-items: center;
-    min-height: 100vh;
-    /* background: rgb(2, 27, 34); */
-}
-
 
 h1{
-    font-family: 'Carter One', cursive;
+    /* font-family: 'Carter One', cursive;
     font-size: 50px;
-    background: linear-gradient(#1497be, #1c2aec);
-    color: transparent;
-    text-align: center; 
-    
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    
-    
+    text-align: center;  */
+    /* position: absolute; */
+    position:float;
+    margin-top: 0;
     }
 

@@ -32,6 +32,7 @@
      
 }
 .titulo{
+    display: flex;
     font-family: 'Carter One', cursive;
     font-size: 50px;
     align-items: center;

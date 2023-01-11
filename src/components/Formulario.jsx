@@ -12,7 +12,7 @@ import {
   FormHelperText,
 } from '@chakra-ui/react'
 import Select from 'react-select';
-import Animacion from './Animacion';
+
 
 const Formulario = () => {
   const { register, handleSubmit, watch, formState: { errors } } = useForm()

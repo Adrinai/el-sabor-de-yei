@@ -20,34 +20,46 @@ const InfoContacto = () => {
       </p>
       </div>
       <div className='text'>
-      <div>
-      <FaFacebook className='enlaces'/>
+        
+      <div className='face'>
+        <div>
+      <FaFacebook className='icono'/>
       </div>
       <div >
       <a className='enlaces'href={'https://www.facebook.com/elsabordeyei'}>elsabordeyei</a>
       </div>
-      <div>
-      <FaInstagram className='enlaces'/>
+      </div>
+      
+      <div className='inst'>
+        <div>
+      <FaInstagram className='icono'/>
       </div>
       <div>
       <a className='enlaces'href={'https://bit.ly/3fVS0kv'}>elsabordeyei</a>
       </div>
-      <div >
-    <FaRegEnvelope className='enlaces'/> 
+      </div>       
+      <div className='emal'>
+      <div>
+    <FaRegEnvelope className='icono'/> 
       </div>
       <div>
       <a className='enlaces'href={'mailto:grupoelsabordeyei0711ca@gmail.com?Subject=Más%20información%20sobre%20sus%20productos'}>grupoelsabordeyei0711ca@gmail.com</a>
       </div>
+      </div>
       <div >
-      <AiFillPhone className='enlaces'/> 
+      {/* <AiFillPhone className='icono'/>  */}
+      <div className='was'>
       <div> 
-      <FaWhatsapp className='enlaces'/><a href={'https://walink.co/eea979'}> +58 424-2924205</a>
-    </div>
+      <FaWhatsapp className='icono'/>
+      </div>
+      <div><a className='enlaces' href={'https://walink.co/eea979'}> +58 424-2924205</a></div>
+    
+   </div>
       </div>
       
       </div>
       </div>
-      </div>
+</div>
   )
 }
 

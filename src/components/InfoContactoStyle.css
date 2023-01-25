@@ -7,6 +7,7 @@
 .contacto{
     /* color: black; */
     text-align: center;
+    font-size: x-large;
 }
 .info{
     margin-bottom: 0;
@@ -14,7 +15,7 @@
    display: inline-block;
    width: auto;
    margin: auto;
-   text-align: right;
+   text-align: center;
    width: 450px;
     /* max-width: 75em; */
     min-height: 40vh;
@@ -30,24 +31,52 @@
 
 
 .opinion p{
+    
     color:black ;
     width: 70%;
     text-align: justify;
     margin-left: 20px;
+    font-size: medium;
 }
 .text{
+    display:grid;
+    grid-template-columns: auto;
+    
+    /* flex-wrap: wrap;
+    justify-content: space-between; */
     color: black; 
-    width: auto;
-   margin: auto;
+    width: 100%;
+   margin: 0;
    padding: 20px 20px 20px;
    
 }
 .enlaces{
     
-    width: 70%;
+    
     position: relative;
-    justify-content: left;
-    text-align: justify;
+    font-size:medium;
+}
+/* .face{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.inst{
+    display: flex;
+    justify-content: space-around;
+}
+.emal{
+    display: flex;
+    justify-content: space-around;
+}
+.was{
+    display: flex;
+    justify-content: space-around;
+} */
+.icono{
+    font-size: x-large;
+    float: left;
+    
 }
 
 .logo{

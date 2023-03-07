@@ -1,5 +1,5 @@
-import React, {useState, Fragment} from 'react'
-import { useForm } from "react-hook-form";
+import React, {useState, Fragment} from 'react';
+import { useForm, useFormState } from "react-hook-form";
 import "../components/Styles/MainStyle.css";
 import "../components/Formulario.css";
 import { Flex, Spacer } from '@chakra-ui/react'
@@ -12,28 +12,60 @@ import {
   FormHelperText,
 } from '@chakra-ui/react'
 import Select from 'react-select';
-
+import { useFormik } from 'formik';
+import * as Yup from 'yup';
 
 const Formulario = () => {
-  const [datos, setDatos] = useState({
-    nombre:'',
-    asunto:'',
-    mail:'',
-    ciudad:'',
-    telefono:'',
-    pedido:'',
-  })
-  const handleInputChange =(event) => {
-      console.log(event.target.value)
+  // const (formState, setFormState) = useState({});
+  // const changehandler = ()=>{
+
+  // }
+  const validate = values => {
+    const errors= {};
+      // if(!values.nombre){
+      //   errors.nombre = 'Required';
+      // }
+
+    return errors;
   }
-  const { register, handleSubmit, watch, formState: { errors } } = useForm()
-  const customSubmit=(data)=>{
-      console.log(data)
-  }
+
+
+  const Formik = useFormik({
+    initialValues: {nombre:'', asunto:'', mail:'', ciudad:'', telefono:'', pedido:''},
+    // 
+    validationSchema: Yup.object({
+      nombre: Yup.string()
+        .required('el campo nombre es requerido')
+        .min(3, 'el campo nombre minimo ha de tener 3 caracteres')
+        .max(15, 'el campo nombre tiene como maximo 15 caracteres'),
+      asunto: Yup.string()
+        .min(5, 'minimo tiene que tener 5 caracteres'),
+      mail: Yup.string()
+        .required('campo requerido')
+        .email('el formato de email es incorrecto'),
+      ciudad: Yup.string(),
+      telefono: Yup.number()
+        .required('el campo telefono es obligatorio'),
+      pedido: Yup.string(),
+
+    }),
+    onSubmit: Values=>{
+      console.log(Values);
+      }
+    
+  });
+  // const handleChange =(event) => {
+  //     console.log(event.target.value)
+  // }
+  // const { handleSubmit} = useForm()
+  // const customSubmit=(data)=>{
+  //     console.log(data)
+  // }
   return (
     <Fragment>
-      <form onSubmit={handleSubmit} className='form-react'>
-    <div className='formulario'>
+      <form action="https://formsubmit.co/grupoelsabordeyei0711ca@gmail.com" 
+      method="POST" className='form-react'>
+    <div className='formulario-ori'>
       {/* <Animacion/> */}
       
     <FormControl className='row'>
@@ -42,35 +74,91 @@ const Formulario = () => {
         <h1 className='border'>PEDIDO</h1>
         {/* <h1 className='wave'>PEDIDO</h1> */}
       </div>
-      <form action="https://formsubmit.co/grupoelsabordeyei0711ca@gmail.com" method="POST" />
+      <form 
+      // action="https://formsubmit.co/adrinai.conchi@gmail.com" 
+      // method="POST" 
+      />
     <FormLabel className='texto'>Nombre</FormLabel>
-    <Input type='text' placeholder='nombre completo' name='nombre' className='texto' onChange={handleInputChange} />   
+
+    <Input 
+    type='text' 
+    placeholder='nombre completo' 
+    name='nombre' className='texto' 
+    onChange={Formik.handleChange} 
+    onBlur={Formik.handleBlur}
+    value={Formik.values.nombre}/> 
+    {Formik.touched.nombre && Formik.errors.nombre ? (
+    <div className='error'>{Formik.errors.nombre}</div>
+    ):null}
+    
 </FormControl>
 <FormControl>
 <FormLabel className='texto'>Asunto</FormLabel>
-<Input type='text' name='asunto'className='texto'{...register('asunto')} />
-
+<Input 
+type='text' 
+name='asunto'
+className='texto' 
+onChange={Formik.handleChange} 
+onBlur={Formik.handleBlur}
+value={Formik.values.asunto}/>
+{Formik.touched.asunto && Formik.errors.asunto ? (
+    <div className='error'>{Formik.errors.asunto}</div>
+    ):null}
 </FormControl>
 <FormControl>
 <FormLabel className='texto' >Email</FormLabel>
-<Input type='email' name='mail' className='texto'{...register('email')}/> 
+
+<Input 
+type='email' 
+name='mail' 
+className='texto'
+onChange={Formik.handleChange}
+onBlur={Formik.handleBlur} 
+value={Formik.values.mail}/> 
+{Formik.touched.mail && Formik.errors.mail ? (
+    <div className='error'>{Formik.errors.mail}</div>
+    ):null}
 </FormControl>
 <FormControl>
 <FormLabel className='texto'>Ciudad</FormLabel>
-<Input type='text' name='ciudad'className='texto' {...register('ciudad')}/>
+
+<Input 
+type='text' 
+name='ciudad'
+className='texto' 
+onChange={Formik.handleChange} 
+onBlur={Formik.handleBlur}
+value={Formik.values.ciudad}/>
 </FormControl>
 <FormControl>
 <FormLabel className='texto' >Telefono</FormLabel>
-<Input type='tel' name='teletefono' className='texto'{...register('telefono')}/>
+
+<Input 
+type='number' 
+name='telefono' 
+className='texto'
+onChange={Formik.handleChange} 
+onBlur={Formik.handleBlur}
+value={Formik.values.telefono}/>
+{Formik.touched.telefono && Formik.errors.telefono ? (
+    <div className='error'>{Formik.errors.telefono}</div>
+    ):null}
 </FormControl>
 
     
 <FormControl> 
 <FormLabel className='texto'>Mensaje</FormLabel>
-<Textarea name='pedido'className='texto'{...register('mensaje')}/>
+<Textarea 
+tape='text'
+name='pedido'
+className='texto'
+onChange={Formik.handleChange} 
+onBlur={Formik.handleBlur}
+value={Formik.values.pedido}/>
 </FormControl>
 
-<Button colorScheme='' className='boton'type='submit'>Enviar</Button>
+<Button colorScheme='' className='boton'type='submit' value={Formik.values}>Enviar</Button>
+
 </FormControl>
 </div>
 </form>

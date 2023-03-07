@@ -38,7 +38,7 @@
     margin-left: 20px;
     font-size: medium;
 }
-.text{
+.text-inf{
     display:grid;
     grid-template-columns: auto;
     
@@ -52,9 +52,8 @@
 }
 .enlaces{
     
-    
     position: relative;
-    font-size:medium;
+    font-size:15px;
 }
 /* .face{
     display: flex;
@@ -79,6 +78,6 @@
     
 }
 
-.logo{
+.logo-inf{
     align-items: center;
 }

@@ -6,14 +6,17 @@ import "../Styles/MainStyle.css";
 
 export default function Inicio() {
   return (
-    <div className="portada">
+  <div className='portada'>
       <div>
-        <Navbar />
         <Logo />
+
+        <Navbar />
       </div>
-      <div className="footer">
-        <Footer />
+    <div className="body"></div>
+    <div className="footer">
+          <Footer />
       </div>
-    </div>
+  </div>  
+    
   );
 }

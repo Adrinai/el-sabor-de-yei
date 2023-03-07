@@ -6,7 +6,7 @@ import {
   Menu,
   MenuItem,
   MenuItemLink,
-} from "./NavbarStyle";
+} from "./NavbarStyle.js";
 
 import { IconContext } from "react-icons";
 
@@ -27,7 +27,14 @@ const Navbar = () => {
               </MenuItemLink>
             </MenuItem>
             <MenuItem>
-              <MenuItemLink>PRODUCTOS</MenuItemLink>
+              <MenuItemLink>
+              <Link to="/productos">Productos</Link>
+              </MenuItemLink>
+            </MenuItem>
+            <MenuItem>
+              <MenuItemLink>
+                <Link to="/cursos">cursos</Link>
+              </MenuItemLink>
             </MenuItem>
             <MenuItem>
             <MenuItemLink>
@@ -39,6 +46,6 @@ const Navbar = () => {
       </Wrapper>
     </Container>
   );
-};
+}
 
 export default Navbar;

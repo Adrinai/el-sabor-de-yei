@@ -9,12 +9,12 @@
   
 }
 .portada {
-  /* display: grid;
+  display: grid;
   gap:1;
-  height:200px;
-  grid-template-columns: 150px, 1fr;  */
+  /* height:200px; */
+  grid-template-columns: 150px, 1fr;  
 grid-template-rows: 50px 1fr 30px; 
-  height: 100vh;
+  height: 100%;
   width: 100vw; 
   position: relative;
   background-image: url("../../assets/img/portada2.jpg");
@@ -23,7 +23,15 @@ grid-template-rows: 50px 1fr 30px;
   background-attachment: fixed;
   
 }
+.body{
+  height: 100%;
+}
+.footer{
+  padding: 0;
+  position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 
 
-
-
+}

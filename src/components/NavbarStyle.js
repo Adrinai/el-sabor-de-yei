@@ -1,6 +1,6 @@
 import styled from "styled-components"
 export const Container = styled.div`
-width: 100%;
+width: 100vw;
 height: 40px;
 background-color: rgba(5, 150, 155, 0.4);
 
@@ -64,6 +64,7 @@ transition: 0.5s all ease;
     color: #fff;
     background-color: rgb(153, 214, 216);
     transition: 0.5s all ease;
+
 `
 // export const MobileIcon = styled.div`
 // display: none;

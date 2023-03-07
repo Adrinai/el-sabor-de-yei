@@ -19,7 +19,7 @@ const InfoContacto = () => {
       Nos interesa tu opinión, si tienes dudas o sugerencias ¡escríbenos!
       </p>
       </div>
-      <div className='text'>
+      <div className='text-inf'>
         
       <div className='face'>
         <div>

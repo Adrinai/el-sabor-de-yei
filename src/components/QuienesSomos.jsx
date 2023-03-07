@@ -13,18 +13,24 @@ export default function QuienesSomos() {
     
    
     <div className="portada">
-      <div>
-        <Navbar />
-        <Logo />
+       <div className='header-quien'>
+          <div>
+          <Logo />
+          </div>
+          <div>
+          <Navbar />
+          </div>
       </div>
-      
+      <div className='contenido'>
       <div className='capa'> 
-      <Grid templateColumns='repeat(5, 1fr)' gap={4}>
+      <div className='foto'>
+      {/* <Grid templateColumns='repeat(5, 1fr)' gap={4}>
   <GridItem colSpan={2} h='10'  />
   <GridItem colStart={4} colEnd={6} h='10'  />
-</Grid>  
+</Grid>   */}
         <img className='foto'
         src={perfil}/>
+        </div>
         <div className='historia'>
       <p>
       El sabor de yei conocido en instagram como @el sabor.ve , es una empresa familiar que se encarga de elaborar tortas temáticas panes dulces pasapalos, Brownies, tortas 3D en fondant y mucho más.
@@ -37,13 +43,14 @@ export default function QuienesSomos() {
    </div> 
     
     </div>
+    </div>
     
-      <div className="footer">
-        <div>
+      <div className="pie">
+        
         <Footer />
-        </div>
+        
       </div>
     </div>
     
-  );
+  )
 }

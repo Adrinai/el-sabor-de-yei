@@ -1,0 +1,28 @@
+.producto{
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    
+}
+@media (max-width: 500px) {
+    .portada{
+      flex-direction: column;
+    }
+  }
+  .redes{
+    width: 100vw;
+  }
+  .menu{
+    width: 100vw;
+  }
+  .titulo{
+    width: 100vw;
+    background-color: rgba(5, 150, 155, 0.4);
+  }
+  .fotos{
+    display: flex;
+    width: 100%;
+    position: relative;
+    max-width: 400px;
+   padding: 0;
+  }

@@ -1,32 +1,25 @@
 .portada{
-  display: grid;
-  gap:1;
-  /* height:200px; */
+  margin-bottom: 0;
   margin: 0;
   height: 100%;
   width: 100vw; 
-  position: absolute;
+  position: relative;
   background-image: url("../assets/img/portada2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   
 }
-@media (max-width: 500px) {
+/* @media (max-width: 800px) {
   .portada{
     flex-direction: column;
   }
-}
+} */
 
-.header-quien{
-  display: flex;
-  width: 100%;
-  margin-top: 0px;
-  margin-bottom: 50px;
-}
+
 .historia{
     border-radius: 5px;
-    justify-content: center;
+    justify-content:justify;
     z-index: 1;
     width: 540px;
     height: 370px;
@@ -35,15 +28,15 @@
     line-height: 1.5;
     background-color: aliceblue;
     justify-items: center;
-    margin: top -150px; 
+    margin: top -100px; 
+    margin-bottom: 50px;
     padding: 35px;
     }
     .foto{
-      margin-top: 0px;
+      margin-bottom: 35px;
+      padding: 20px;
       width: auto;
-      
     }
-    
     
     
     .historia p{
@@ -59,7 +52,7 @@
      box-shadow: 1px 5px 10px rgba(0,0,0,0.45);
      border-radius: 5px;
      align-content: right;
-     margin-top: -20px;
+     margin-top: -50px;
     }
     
     .capa{
@@ -75,7 +68,7 @@
   /* grid-template-columns: 150px, 1fr; 
 grid-template-rows: 50px 1fr 30px;  */
       border-radius: 5px;
-      width: 100vw;
+      width: 100%;
     position: relative;
     display: flex;
     justify-content: center;
@@ -86,26 +79,25 @@ grid-template-rows: 50px 1fr 30px;  */
     } 
     .contenido{
       width: 100vw;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 80px;
-    justify-content: space-around;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 80px;
+      justify-content: space-around;
     }
     @media  (max-width: 800px) {
       .capa{
         flex-direction: column;
-        font-size: 5px;
+        
       }
     }
     
     
     .pie{
       
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+      position: relative;
+      margin-bottom: 0;
+      width: 100%;
       }
     

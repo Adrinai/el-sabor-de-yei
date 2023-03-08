@@ -1,5 +1,6 @@
 .portada{
-  height: 100vh;
+  margin-bottom: 0;
+  height: 100%;
   width: 100vw; 
   position: relative;
   margin: 0;

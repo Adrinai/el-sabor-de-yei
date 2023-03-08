@@ -9,10 +9,11 @@ export default function Inicio() {
   <div className='portada'>
       <div>
         <Logo />
-
+          </div>
+          <div>
         <Navbar />
       </div>
-    <div className="body"></div>
+       <div className="body"></div>
     <div className="footer">
           <Footer />
       </div>

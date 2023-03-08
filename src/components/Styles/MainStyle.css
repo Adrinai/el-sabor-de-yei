@@ -28,10 +28,9 @@ grid-template-rows: 50px 1fr 30px;
 }
 .footer{
   padding: 0;
-  position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
-
+    position: relative;
+    margin-bottom: 0;
+    
 
 }

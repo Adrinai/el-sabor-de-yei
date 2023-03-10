@@ -1,13 +1,13 @@
 
 
 import { LogoContainer } from '../components/NavbarStyle';
-import bolaschoco from './img/bolaschoco.jpeg';
-import cupkeistrosas from './img/cupkeistrosas.jpeg';
+// import bolaschoco from './img/bolaschoco.jpeg';
+// import cupkeistrosas from './img/cupkeistrosas.jpeg';
 import logo from './img/logo.png';
 import porciontarta from './img/porciontarta.jpeg';
 import portada1 from './img/portada1.jpeg';
 import postres from './img/postres.jpeg';
-import tartachoco from './img/tartachoco.jpeg';
+// import tartachoco from './img/tartachoco.jpeg';
 import tartacumple from './img/tartacumple.jpeg';
 import tartacumple3 from './img/tartacumple3.jpeg';
 import tartacumpleaños2 from './img/tartacumpleaños2.jpeg';
@@ -25,13 +25,13 @@ import logopeque from './img/logopeque.png';
 import perfil from './img/perfil 4.jpeg';
 
 export default{
-    "img1": bolaschoco,
-    "img2": cupkeistrosas,
+    // "img1": bolaschoco,
+    // "img2": cupkeistrosas,
     "img3": logo,
     "img4": porciontarta,
     "img5": portada1,
     "img6": postres,
-    "img7": tartachoco,
+    // "img7": tartachoco,
     "img8": tartacumple,
     "img9": tartacumple3,
     "img10": tartacumpleaños2,

@@ -39,7 +39,7 @@ export default function Contacto() {
 
 
     <div className="portada">
-        <div className='header'>
+        <div className='header-cont'>
           <div>
           <Logo />
           </div>

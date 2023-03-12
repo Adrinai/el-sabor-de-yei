@@ -20,13 +20,13 @@ function CarruselEjemplo() {
     }
 
   return (
-    <div className='carruselEjemplo'>
-      <img src={sliderData.value} height="300" width="400"/>
+    <div className='carrusel'>
+      <img src={sliderData.value} height="300" width="400" alt="tarta"/>
       <div className='flex_row'>
       {
         imgs.map((data, i) =>
           <div className='thumbnail'key={i}>
-          <img className={sliderData.id==i?"clicked":""} src={data.value} onclick={()=> handleclick(i)} height="70" width="100"/>
+          <img className={sliderData.id==i?"clicked":""} src={data.value} onclick={()=> handleclick(i)} height="70" width="100" alt='curso'/>
           </div>
         )
       }

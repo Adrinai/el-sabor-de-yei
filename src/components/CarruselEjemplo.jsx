@@ -1,36 +1,65 @@
-import React, {useState} from 'react';
-import "../components/Carrusel.css";
-// import bolaschoco from '../assets/img/bolaschoco.jpeg';//estatica
 
+import {Swiper, SwiperSlide} from "swiper/react";
+import 'swiper/swiper.min.css';
+
+import "./styles.css";
+
+import SwiperCore, {
+  EffectCoverflow,
+  Pagination,
+  Navigation
+} from "swiper/core";
+
+SwiperCore.use([EffectCoverflow, Pagination, Navigation]);
 
 function CarruselEjemplo() {
-    const imgs=[
-      {id: 0, value: "https://localhost:3000/bolaschoco.jpeg"},
-      
-      {id: 1, value:"https://github.com/Adrinai/el-sabor-de-yei/blob/main/public/cupkeistrosas.jpeg"},
-      {id: 2, value: "https://github.com/Adrinai/el-sabor-de-yei/blob/main/public/pinchos.jpeg"},
-      {id: 3, value: "https://github.com/Adrinai/el-sabor-de-yei/blob/main/public/tartachoco.jpeg"},
-    ];
-    
-    const[sliderData, setSliderData]=useState(imgs[0])
-    const handleclick=(index)=>{
-      console.log(index);
-      const slider=imgs[index];
-      setSliderData(slider);
-    }
 
   return (
-    <div className='carrusel'>
-      <img src={sliderData.value} height="300" width="400" alt="tarta"/>
-      <div className='flex_row'>
-      {
-        imgs.map((data, i) =>
-          <div className='thumbnail'key={i}>
-          <img className={sliderData.id==i?"clicked":""} src={data.value} onclick={()=> handleclick(i)} height="70" width="100" alt='curso'/>
-          </div>
-        )
-      }
+    <div className='container'>
+      <div className='title_wrapper'>
+        <div className='reactLogo'>
+          <img src= '../assets/img/tartacumple.jpeg'/>
+        </div>
+         <div className='title_'>
+          <span>""</span>CURSOS
+         </div>
       </div>
+      <Swiper
+        navigation={true}
+        effect={"coverflow"}
+        centeredSlides={true}
+        slidesPerView={window.innerWidth< 768 ? 1 : "auto"}
+        loop={true}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true
+        }}
+        pagination={{
+          clickable: true
+        }}
+        className = "miSwiper"
+        >
+          <SwiperSlide>
+            <img src='tartacumple3.jpeg' alt='cumple3'/>
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src='tapers.jpg' alt='taper'/>
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src='../assets/img/tartacumpleaños2.jpeg' alt='cumple2'/>
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src='tartanata.jpeg' alt='nata'/>
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src='tartafloresverdes.jpeg' alt='tartaflores'/>
+          </SwiperSlide>
+
+      </Swiper>
+     
       </div>
   );
 }

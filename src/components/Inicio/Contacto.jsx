@@ -1,12 +1,12 @@
 import React from 'react'
-import Navbar from "./Navbar";
-import Logo from "./Logo";
-import Footer from "./Footer";
-import Formulario from "./Formulario";
-import "../components/Formulario.css"
-import InfoContacto from './InfoContacto';
+import Navbar from "../Navbar";
+import Logo from "../Logo";
+import Footer from "../Footer";
+import Formulario from "../Formulario";
+import "../Formulario.css";
+import InfoContacto from '../InfoContacto';
 // import "../components/InfoContactoStyle.css"
-import "../components/Contacto.css"
+import "../Contacto.css"
 
 
 export default function Contacto() {

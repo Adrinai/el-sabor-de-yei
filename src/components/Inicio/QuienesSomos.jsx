@@ -1,10 +1,10 @@
 import React from 'react'
-import Navbar from "./Navbar";
-import Logo from "./Logo";
-import Footer from "./Footer";
-import "./Styles/MainStyle.css";
-import perfil from '../assets/img/perfil 4.jpeg';
-import "./QuieneStyle.css";
+import Navbar from "../Navbar";
+import Logo from "../Logo";
+import Footer from "../Footer";
+import "../Styles/MainStyle.css";
+import perfil from '../../assets/img/perfil 4.jpeg';
+import "../QuieneStyle.css";
 import { Grid, GridItem } from '@chakra-ui/react';
 import { Flex, Spacer } from '@chakra-ui/react';
 

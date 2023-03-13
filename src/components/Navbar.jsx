@@ -31,11 +31,11 @@ const Navbar = () => {
               <Link to="/productos">Productos</Link>
               </MenuItemLink>
             </MenuItem>
-            <MenuItem>
+            {/* <MenuItem>
               <MenuItemLink>
                 <Link to="/cursos">cursos</Link>
               </MenuItemLink>
-            </MenuItem>
+            </MenuItem> */}
             <MenuItem>
             <MenuItemLink>
               <Link to="/contacto">Contacto</Link>

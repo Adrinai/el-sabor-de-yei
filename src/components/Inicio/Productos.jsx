@@ -1,8 +1,8 @@
 import React from 'react';
-import CarruselCumple from "./CarruselCumple";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-import "./Productos.css";
+import CarruselCumple from "../CarruselCumple";
+import Navbar from "../Navbar";
+import Footer from "../Footer";
+import "../Productos.css";
 
 
 export default function Productos() {

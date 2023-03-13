@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react';
 import {
   Carousel,
   CarouselItem,
@@ -10,17 +10,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const items = [
   {
-    src: require('../assets/img/tartacumple.jpeg'),
+    src: require('../../assets/img/tartacumple.jpeg'),
     altText: 'imagen 1',
     caption: 'cumpleaños'
   },
   {
-    src: require('../assets/img/tartacumple3.jpeg'),
+    src: require('../../assets/img/tartacumple3.jpeg'),
     altText: 'imagen 2',
     caption: 'cumpleaños 2'
   },
   {
-    src: require('../assets/img/tartacumpleaños2.jpeg'),
+    src: require('../../assets/img/tartacumpleaños2.jpeg'),
     altText: 'imagen 3',
     caption: 'cumpleños 3'
   }

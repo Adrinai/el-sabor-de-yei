@@ -1,8 +1,7 @@
 import React from 'react'
-import "../components/InfoContactoStyle.css";
-import Logo from './Logo';
+import "../../components/inforcontacto/InfoContactoStyle.css";
+import Logo from '../logo/Logo';
 import { FaInstagram, FaFacebook, FaRegEnvelope, FaWhatsapp} from "react-icons/fa";
-import { AiFillPhone } from "react-icons/ai";
 
 const InfoContacto = () => {
   return (

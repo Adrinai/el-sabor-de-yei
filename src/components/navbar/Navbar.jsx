@@ -5,7 +5,7 @@ import {
   Wrapper,
   Menu,
   MenuItem,
-  MenuItemLink,
+  
 } from "./NavbarStyle.js";
 
 import { IconContext } from "react-icons";
@@ -17,29 +17,29 @@ const Navbar = () => {
         <IconContext.Provider value={{ style: { fontSize: "1rem" } }}>
           <Menu>
             <MenuItem>
-              <MenuItemLink>
+              
                 <Link to="/">Inicio</Link>
-              </MenuItemLink>
+              
             </MenuItem>
             <MenuItem>
-              <MenuItemLink>
+              
                 <Link to="/quienesSomos">Quienes Somos</Link>
-              </MenuItemLink>
+              
             </MenuItem>
             <MenuItem>
-              <MenuItemLink>
+              
               <Link to="/productos">Productos</Link>
-              </MenuItemLink>
+              
             </MenuItem>
-            {/* <MenuItem>
-              <MenuItemLink>
-                <Link to="/cursos">cursos</Link>
-              </MenuItemLink>
-            </MenuItem> */}
             <MenuItem>
-            <MenuItemLink>
+              
+                <Link to="/cursos">cursos</Link>
+              
+            </MenuItem>
+            <MenuItem>
+            
               <Link to="/contacto">Contacto</Link>
-            </MenuItemLink>
+            
             </MenuItem>
           </Menu>
         </IconContext.Provider>

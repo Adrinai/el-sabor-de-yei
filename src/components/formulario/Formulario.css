@@ -8,17 +8,18 @@
 
 .formulario-ori{
     
-    width: 450px;
+    width: 350px;
     max-width: 75em;
-    min-height: 70vh;
+    
     margin: auto;
     background: rgba(0, 0, 0, 0.3);
-    padding: 5px 10px;
+    padding: 20px 10px;
     box-sizing: border-box;
     border-radius: 10px;
     margin-top: -40px;
     
 }
+
 .pedido{
     
     color: aliceblue;
@@ -38,8 +39,8 @@
     text-align: center;
     color: rgb(249, 249, 249);
     background:none;
-    text-shadow: -1px -1px 0 white,
-                 1px -1px 0 white,            
+    /* text-shadow: -1px -1px 0 white,
+                 1px -1px 0 white,             */
 }
 .Input{
     width: 100%;

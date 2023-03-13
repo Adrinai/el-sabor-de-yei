@@ -1,8 +1,8 @@
 import React from 'react'
-import CarruselEjemplo from '../CarruselEjemplo';
+import CarruselEjemplo from '../carrusel/CarruselEjemplo';
 
-import Navbar from '../Navbar';
-import Logo from '../Logo';
+import Navbar from '../navbar/Navbar';
+import Logo from '../logo/Logo';
 
 const Cursos = () => {
   return (

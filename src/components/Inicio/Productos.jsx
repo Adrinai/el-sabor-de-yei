@@ -1,7 +1,7 @@
 import React from 'react';
-import CarruselCumple from "../CarruselCumple";
-import Navbar from "../Navbar";
-import Footer from "../Footer";
+import CarruselCumple from "../carrusel/CarruselCumple";
+import Navbar from "../navbar/Navbar";
+import Footer from "../footer/Footer";
 import "../Productos.css";
 
 

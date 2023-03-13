@@ -2,7 +2,7 @@
 import {Swiper, SwiperSlide} from "swiper/react";
 import 'swiper/swiper.min.css';
 
-import "./styles.css";
+import "../../components/styles.scss";
 
 import SwiperCore, {
   EffectCoverflow,
@@ -18,7 +18,7 @@ function CarruselEjemplo() {
     <div className='container'>
       <div className='title_wrapper'>
         <div className='reactLogo'>
-          <img src= '../assets/img/tartacumple.jpeg'/>
+          <img src= '../assets/img/tartacumple.jpeg' alt="tarta"/>
         </div>
          <div className='title_'>
           <span>""</span>CURSOS

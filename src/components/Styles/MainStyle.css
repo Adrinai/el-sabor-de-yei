@@ -2,18 +2,7 @@
 @import url('https://fonts.googleapis.com/css2? family= Kanit & family= Open+Sans:ital,wght@1,500 & display=swap');
 
 
-*{
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  
-}
-.portada-ini {
-  display: grid;
-  gap:1;
-  /* height:200px; */
-  grid-template-columns: 150px, 1fr;  
-grid-template-rows: 50px 1fr 30px; 
+.portada-ini { 
   height: 100vh;
   width: 100vw; 
   position: relative;
@@ -24,13 +13,31 @@ grid-template-rows: 50px 1fr 30px;
   
 }
 .body{
-  height: 100vh;
+  height: 74vh;
 }
 .footer{
   padding: 0;
     width: 100%;
     position: relative;
     margin-bottom: 0;
-    
-
+}
+@media  (max-width: 800px) {
+  .portada-ini{
+    flex-direction: column;
+  }
+}
+@media  (max-width: 800px) {
+  .body{
+    flex-direction: column;
+  }
+}
+@media (max-width: 800px) {
+  .footer{
+    flex-direction: column;
+  }
+}
+@media (max-width: 800px) {
+  .cabecera{
+    flex-direction: column;
+  }
 }

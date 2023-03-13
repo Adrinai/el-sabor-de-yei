@@ -1,17 +1,12 @@
-import React, {useState, Fragment} from 'react';
-import { useForm, useFormState } from "react-hook-form";
-import "../components/Styles/MainStyle.css";
-import "../components/Formulario.css";
-import { Flex, Spacer } from '@chakra-ui/react'
-import { Button, ButtonGroup, Textarea} from '@chakra-ui/react'
+import React, {Fragment} from 'react';
+import "../../components/Styles/MainStyle.css";
+import "../../components/formulario/Formulario.css";
+import { Button, Textarea} from '@chakra-ui/react'
 import {
   FormControl,
   FormLabel,
   Input,
-  FormErrorMessage,
-  FormHelperText,
 } from '@chakra-ui/react'
-import Select from 'react-select';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 
@@ -20,14 +15,7 @@ const Formulario = () => {
   // const changehandler = ()=>{
 
   // }
-  const validate = values => {
-    const errors= {};
-      // if(!values.nombre){
-      //   errors.nombre = 'Required';
-      // }
-
-    return errors;
-  }
+  
 
 
   const Formik = useFormik({
@@ -74,10 +62,7 @@ const Formulario = () => {
         <h1 className='border'>PEDIDO</h1>
         {/* <h1 className='wave'>PEDIDO</h1> */}
       </div>
-      <form 
-      // action="https://formsubmit.co/adrinai.conchi@gmail.com" 
-      // method="POST" 
-      />
+      
     <FormLabel className='texto'>Nombre</FormLabel>
 
     <Input 

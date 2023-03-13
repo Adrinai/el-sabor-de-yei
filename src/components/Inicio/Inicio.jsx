@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "../Navbar";
-import Logo from "../Logo";
-import Footer from "../Footer";
+import Navbar from "../navbar/Navbar";
+import Logo from "../logo/Logo";
+import Footer from "../footer/Footer";
 import "../Styles/MainStyle.css";
 
 export default function Inicio() {
@@ -15,7 +15,9 @@ export default function Inicio() {
         <Navbar />
       </div>
       </div>
-       <div className="body"></div>
+       <div className="body">
+        
+       </div>
     <div className="footer">
           <Footer />
       </div>

@@ -46,10 +46,7 @@ list-style: none;
 }
 `
 export const MenuItem = styled.li`
-height: 100%;
-aligne-items: right;
-`
-export const MenuItemLink = styled.a`
+
 display: flex;
 justiy-content: center;
 aligne-items: right;

@@ -1,10 +1,10 @@
 
 import { BrowserRouter, Routes, Route,  } from "react-router-dom";
-import Inicio from "./components/Inicio/Inicio";
-import QuienesSomos from "./components/Inicio/QuienesSomos";
-import Productos from "./components/Inicio/Productos";
-import Cursos from "./components/Inicio/Cursos";
-import Contacto from "./components/Inicio/Contacto";
+import Inicio from "./components/pages/Inicio";
+import QuienesSomos from "./components/pages/QuienesSomos";
+import Productos from "./components/pages/Productos";
+import Cursos from "./components/pages/Cursos";
+import Contacto from "./components/pages/Contacto";
 
 
 function App() {

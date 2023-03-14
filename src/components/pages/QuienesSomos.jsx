@@ -2,9 +2,8 @@ import React from 'react'
 import Navbar from "../navbar/Navbar";
 import Logo from "../logo/Logo";
 import Footer from "../footer/Footer";
-import "../Styles/MainStyle.css";
 import perfil from '../../assets/img/perfil 4.jpeg';
-import "../QuieneStyle.css";
+import "../pages/MainStyle.scss";
 
 export default function QuienesSomos() {
   return (

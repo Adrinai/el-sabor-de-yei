@@ -6,7 +6,7 @@ import Formulario from "../../components/formulario/Formulario";
 import "../../components/formulario/Formulario.css";
 import InfoContacto from '../../components/inforcontacto/InfoContacto';
 // import "../components/InfoContactoStyle.css"
-import "../Contacto.css"
+
 
 
 export default function Contacto() {
@@ -23,21 +23,18 @@ export default function Contacto() {
         <Navbar />
       </div>
       </div>
-       <div className="body">
+       <div className="body-inf">
+       
        <div className='formulario'>
         <Formulario/>
          </div>
-         <div className='capa'>
-        <div>
+        <div className='info-cont'>
         <InfoContacto/>
         </div>
         </div>
-       </div>
     <div className="footer">
           <Footer />
       </div>
-  </div>   
-
-
-  )
+      </div>
+  );
   }

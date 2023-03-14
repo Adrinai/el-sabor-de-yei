@@ -2,34 +2,34 @@ import React from 'react';
 import CarruselCumple from "../carrusel/CarruselCumple";
 import Navbar from "../navbar/Navbar";
 import Footer from "../footer/Footer";
-import "../Productos.css";
+import Logo from "../logo/Logo";
 
 
 export default function Productos() {
   return (
-  <div className='producto'>
 
-      <div className='menu'>
-        <Navbar/>
+<div className="portada">
+    <div className="cabecera">
+      <div>
+        <Logo />
+          </div>
+          <div>
+        <Navbar />
       </div>
-          <div className='titulo'>
+      </div>
+       <div className="body">
+       <div className='titulo'>
             <h1>Productos</h1>
           </div>
       <div className='fotos'>
         <div>
         <CarruselCumple/>
         </div>
-        {/* <div>
-        <CarruselFoundan/>
-        </div>
-        <div>
-          <CarruselSalados/>
-        </div> */}
+       </div>
+    <div className="footer">
+          <Footer />
       </div>
-      <div className='redes'>
-        <Footer/>
-      </div>
-</div>
-
+  </div> 
+  </div> 
   )
 }

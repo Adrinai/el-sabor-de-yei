@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../navbar/Navbar";
 import Logo from "../logo/Logo";
 import Footer from "../footer/Footer";
-import "../Styles/MainStyle.css";
+import "../pages/MainStyle.scss";
 
 export default function Inicio() {
   return (

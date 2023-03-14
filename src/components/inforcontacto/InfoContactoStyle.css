@@ -1,81 +1,83 @@
 *{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-
-}
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+} */
 .contacto{
-    /* color: black; */
-    text-align: center;
-    font-size: x-large;
+  /* color: black; */
+  text-align: center;
+  font-size: x-large;
 }
 .info{
-    margin-bottom: 0;
-    border: 1px;
-   display: inline-block;
-   width: auto;
-   margin: auto;
-   text-align: center;
-   width: 350px;
-    margin: auto;
-    padding: 10px 20px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    margin-top: -40px;
-    /* background: rgba(0, 0, 0, 0.4); */
-    background-color: aliceblue;
-    box-shadow: 1px 5px 25px rgba(0,0,0,0.45);
+  
+  border: 1px;
+ display: inline-block;
+ width: auto;
+ margin: auto;
+ text-align: center;
+ width: 450px;
+  /* max-width: 75em; */
+  
+  margin: auto;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-top: -40px;
+  /* background: rgba(0, 0, 0, 0.4); */
+  background-color: aliceblue;
+  box-shadow: 1px 5px 25px rgba(0,0,0,0.45);
 }
 
 
 .opinion p{
-    
-    color:black ;
-    width: 70%;
-    text-align: justify;
-    margin-left: 20px;
-    font-size: medium;
+  
+  color:black ;
+  width: 70%;
+  text-align: justify;
+  margin-left: 20px;
+  font-size: medium;
+  margin-bottom: 0;
 }
 .text-inf{
-    display:grid;
-    grid-template-columns: auto;
-    
-    /* flex-wrap: wrap;
-    justify-content: space-between; */
-    color: black; 
-    width: 100%;
-   margin: 0;
-   padding: 20px 20px 20px;
-   
+  display:grid;
+  grid-template-columns: auto;
+  
+  /* flex-wrap: wrap;
+  justify-content: space-between; */
+  color: black; 
+  width: 100%;
+ margin: 0;
+ 
+ 
 }
 .enlaces{
-    
-    position: relative;
-    font-size:15px;
+  
+  position: relative;
+  font-size:15px;
 }
 /* .face{
-    display: flex;
-    justify-content: space-around;
-    
+  display: flex;
+  justify-content: space-around;
+  
 }
 .inst{
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 .emal{
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 .was{
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 } */
 .icono{
-    font-size: x-large;
-    float: left;
-    
+  font-size: x-large;
+  float: left;
+  
 }
 
 .logo-inf{
-    align-items: center;
+  align-items: center;
 }

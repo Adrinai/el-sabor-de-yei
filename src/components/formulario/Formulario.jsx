@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import "../../components/Styles/MainStyle.css";
+import "../../components/pages/MainStyle.scss";
 import "../../components/formulario/Formulario.css";
 import { Button, Textarea} from '@chakra-ui/react'
 import {

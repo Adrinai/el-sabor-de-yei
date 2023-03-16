@@ -41,6 +41,12 @@ const Navbar = () => {
               <Link to="/contacto">Contacto</Link>
             
             </MenuItem>
+
+            <MenuItem>
+              
+              <Link to="/sobrenosotros">Productos</Link>
+              
+            </MenuItem>
           </Menu>
         </IconContext.Provider>
       </Wrapper>

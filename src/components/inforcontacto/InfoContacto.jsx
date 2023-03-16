@@ -6,7 +6,7 @@ import Logo from "../logo/Logo"
 const InfoContacto = () => {
   return (
       
-    <div className='info' w-50>
+    <div className = 'info' >
     <h1 className='contacto'>INFORMACIÓN CONTACTO</h1>
   <div>
     <div className='logo'>

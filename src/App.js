@@ -5,7 +5,7 @@ import QuienesSomos from "./components/pages/QuienesSomos";
 import Productos from "./components/pages/Productos";
 import Cursos from "./components/pages/Cursos";
 import Contacto from "./components/pages/Contacto";
-
+import Sobrenosotros from "./components/pages/Sobrenosotros";
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
         <Route path="/productos" element={<Productos />} />
         <Route path="/cursos" element={<Cursos />} />
         <Route path="/contacto" element={<Contacto />} />
+        <Route path="/Sobrenosotros" element={<Sobrenosotros/>}/>
       </Routes>
     </BrowserRouter>
   );

@@ -1,35 +1,25 @@
 import React from 'react';
-import CarruselCumple from "../carrusel/CarruselCumple";
 import Navbar from "../navbar/Navbar";
+import Carrusel from "../carrusel/CarruselCumple"
 import Footer from "../footer/Footer";
 import Logo from "../logo/Logo";
 
 
 export default function Productos() {
   return (
-
-<div className="portada">
-    <div className="cabecera">
-      <div>
+    <div className='phater'>
+      <div className="cabecera">
         <Logo />
-          </div>
-          <div>
-        <Navbar />
-      </div>
-      </div>
-       <div className="body">
-       <div className='titulo'>
-            <h1>Productos</h1>
-          </div>
-      <div className='fotos'>
-        <div>
-        <CarruselCumple/>
+       <Navbar />
+    </div>
+      <div className="wrapper">
+        <div className='card mt-5 mx-auto w-25 shadow-lg'>
+            <Carrusel />
         </div>
-       </div>
-    <div className="footer">
-          <Footer />
       </div>
-  </div> 
-  </div> 
-  )
+      <div className="footer">
+        <Footer />
+      </div>
+    </div>
+  );
 }

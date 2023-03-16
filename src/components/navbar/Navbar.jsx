@@ -42,11 +42,7 @@ const Navbar = () => {
             
             </MenuItem>
 
-            <MenuItem>
-              
-              <Link to="/sobrenosotros">Productos</Link>
-              
-            </MenuItem>
+           
           </Menu>
         </IconContext.Provider>
       </Wrapper>

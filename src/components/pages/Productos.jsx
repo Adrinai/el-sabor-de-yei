@@ -4,37 +4,49 @@ import './productos.css';
 import Navbar from "../navbar/Navbar";
 import Logo from "../logo/Logo";
 import Footer from "../footer/Footer";
-import perfil from "../../assets/img/perfil 4.jpg";
 import "../pages/MainStyle.scss";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Image from 'react-bootstrap/Image';
+
  
 
 function Productos() {
   const productos = [
     {
       id: 1,
-      nombre: "Pastel de zanahoria",
-      imagen: "/img/pastel-zanahoria.jpg",
-      descripcion: "Un delicioso pastel de zanahoria con nueces.",
+      nombre: "Torta de Vainilla y Chantilly",
+      src: require('../../assets/img/torta de vainilla.jpeg'),
+      descripcion: "Un delicioso pastel de founda y vainilla.",
       precio: 15.99,
     },
     {
       id: 2,
-      nombre: "Empanadas de carne",
-      imagen: "/img/empanadas-carne.jpg",
+      nombre: "pastel papa Noel",
+      src: require('../../assets/img/tartapapanoel.jpeg'),
       descripcion: "Unas ricas empanadas de carne especiadas.",
       precio: 2.99,
     },
     {
       id: 3,
-      nombre: "Arepa de chicharrón",
-      imagen: "/img/arepa-chicharron.jpg",
-      descripcion: "Una arepa rellena de chicharrón y queso.",
+      nombre: "Tarta de chocolate",
+      src: require('../../assets/img/tartachoco.jpeg'),
+      descripcion: "tarta de chocolate",
       precio: 7.99,
     },
+    {
+      id: 4,
+      nombre: "Pinchos",
+      src: require('../../assets/img/pinchos.jpeg'),
+      descripcion: "pinchos de carne",
+      precio: 7.99,
+    },
+
+
+
+
+
+
   ];
 
   return (
@@ -45,26 +57,29 @@ function Productos() {
         </Col>
       </Row>
       <Row>
-        <Col></Col>
+        <Col>
     <div>
-      <h1>Productos</h1>
+      <h1 className="titulo-p">Productos</h1>
       <div className="row">
-        {productos.map((producto) => (
-          <div className="col-md-4" key={producto.id}>
+        {productos.map((productos) => (
+          <div className="col-md-4" key={productos.id}>
             <div className="card">
-              <img className="card-img-top" src={producto.imagen} alt={producto.nombre} />
+              <img className="card-img-top" src={productos.src} alt={productos.nombre} />
               <div className="card-body">
-                <h5 className="card-title">{producto.nombre}</h5>
-                <p className="card-text">{producto.descripcion}</p>
-                <p className="card-text">${producto.precio}</p>
+                <h5 className="card-title">{productos.nombre}</h5>
+                <p className="card-text">{productos.descripcion}</p>
+                <p className="card-text">${productos.precio}</p>
               </div>
             </div>
           </div>
         ))}
       </div>
     </div>
+    </Col>
     </Row> 
+    <Footer/>
    </Container>
+ 
   );
 }
 

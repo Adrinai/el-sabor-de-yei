@@ -67,7 +67,7 @@ export default function SmallCentered() {
         as={Stack}
         maxW={'8xl'}
         py={1}
-        spacing={8}
+        spacing={10}
         justify={'center'}
         align={'center'}>
         

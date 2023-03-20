@@ -2,11 +2,10 @@
     box-sizing: inherit;
     margin: 0;
 }
-html{
+/* html{
     box-sizing: border-box;
-    background-image: url("../../assets/img/fondo.jpg");
     background-size: cover;
-}
+} */
 .main_section{
     display: flex;
     align-items: center;

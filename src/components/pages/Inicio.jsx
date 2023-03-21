@@ -1,8 +1,8 @@
 import React from "react";
-import Navbar from "../navbar/Navbar2";
 import Logo from "../logo/Logo";
 import Footer from "../footer/Footer";
 import "../pages/MainStyle.scss";
+import Navbar from "../navbar/Navbar";
 
 export default function Inicio() {
   return (

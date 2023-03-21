@@ -1,41 +1,73 @@
-import React from 'react'
-import Navbar from "../../components/navbar/Navbar";
-import Logo from "../../components/logo/Logo";
-import Footer from "../../components/footer/Footer";
-import Formulario from "../../components/formulario/Formulario";
-import "../../components/formulario/Formulario.css";
+import React from 'react';
+import fondo from '../../assets/img/fondo.jpg';
+import Navbar from '../../components/navbar/Navbar';
+import Logo from '../../components/logo/Logo';
+import Footer from '../../components/footer/Footer';
+import Formulario from '../../components/formulario/Formulario';
 import InfoContacto from '../../components/inforcontacto/InfoContacto';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-
-// import "../components/InfoContactoStyle.css"
+import { Container, Row, Col } from 'react-bootstrap';
 
 
 
 export default function Contacto() {
-    
-    
   return (
     <Container fluid>
-    <Row>
-      <Col>
-        <Logo/><Navbar/>
-      </Col>
-    </Row>
-    <Row>
+      <style>
+        {`
+          .contacto-container {
+            position: relative;
+          }
+          
+          .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+            background-size: cover;
+            opacity: 0.5;
+          }
+          
+          .logo {
+            margin-top: 10px;
+          }
+          .cabecera{
+            margin bootom:10px;
+          }
+          
+          
+          @media (max-width: 768px) {
+            .formulario,
+            .info-contacto {
+              margin-top: 50px;
+            }
+          }
+          
+        `}
+      </style>
+      <div className="contacto-container">
+      <div className="background-image" style={{ backgroundImage: `url(${fondo})` }} />
+      <Row className="image-row">
+      <Row className='cabecera'>
         <Col>
-            <Formulario/>
+          <Logo/><Navbar/>
         </Col>
-    </Row> 
-
-    <Row>
+      </Row>
+      <Row className="form-row">
         <Col>
-            <InfoContacto/>
+          <Formulario />
         </Col>
-    </Row> 
-    <Footer/>
-   </Container>
- 
+        <Col>
+          <InfoContacto />
+        </Col>
+      </Row>
+      <Footer/>
+      </Row>
+      </div>
+    </Container>
+    
   );
-  }
+}
+
+

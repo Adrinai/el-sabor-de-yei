@@ -33,28 +33,38 @@ export default function Contacto() {
             margin-top: 10px;
           }
           .cabecera{
-            margin bootom:10px;
+            margin bottom:10px;
+          }
+          .formulario-container {
+            margin-top: 50px;
           }
           
+          @media (max-width: 768px) {
+            .form-row {
+              margin-bottom: 20px;
+            }
+          }
           
           @media (max-width: 768px) {
             .formulario,
             .info-contacto {
               margin-top: 50px;
+              margin-bottom: 10px;
             }
           }
           
         `}
       </style>
+      <Row className="image-row">
       <div className="contacto-container">
       <div className="background-image" style={{ backgroundImage: `url(${fondo})` }} />
-      <Row className="image-row">
+      
       <Row className='cabecera'>
         <Col>
           <Logo/><Navbar/>
         </Col>
       </Row>
-      <Row className="form-row">
+      <Row className="form-row formulario-container">
         <Col>
           <Formulario />
         </Col>
@@ -62,12 +72,15 @@ export default function Contacto() {
           <InfoContacto />
         </Col>
       </Row>
+      <Row>
       <Footer/>
       </Row>
       </div>
+      </Row>
     </Container>
     
   );
 }
+
 
 
